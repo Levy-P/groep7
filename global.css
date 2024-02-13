@@ -2,7 +2,7 @@
 [flex],body {display:flex;} [grid] {display:grid;}
 main {flex:1;}
 
-:root {
+:root {/* Stijlgids in CSS */
     --p:  #701117; 
     --a1: #aa383f;
     --a2: #fca492;
@@ -10,6 +10,7 @@ main {flex:1;}
     --b2: #f2d48e;
     --c1: #538638;
     --c2: #a9dd8d;
+    /* Gebruik var(-- ) voor kleuren */
     
     font-family: Dosis, sans-serif;
 }
