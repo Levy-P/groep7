@@ -16,7 +16,7 @@
 
 <body>
 <?php include 'libs/components/header.php' ?>
-    <main id="ourmenu">
+    <main id="aboutus">
 
     </main>
 <?php include 'libs/components/footer.php' ?>
