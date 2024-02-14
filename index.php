@@ -15,9 +15,9 @@
     <!--voor <script> tags-->
 </head>
 
-<body>
+<body id="home">
 <?php include 'libs/components/header.php' ?>
-    <main id="home">
+    <main>
 
     </main>
 <?php include 'libs/components/footer.php' ?>

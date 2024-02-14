@@ -15,9 +15,38 @@
     <!--voor <script> tags-->
 </head>
 
-<body>
+<body id="gallery">
 <?php include 'libs/components/header.php' ?>
-    <main id="gallery">
+    <main>
+        <section flex>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+            <article class="pizza" flex>
+                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
+            </article>
+        </section>
 
     </main>
 <?php include 'libs/components/footer.php' ?>

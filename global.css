@@ -1,6 +1,7 @@
 * {margin:0;padding:0;}
+html,body {width:100vw;height:100vh;}
 [flex],body {display:flex;} [grid] {display:grid;}
-main {flex:1;}
+body {flex-direction: column;} main {flex:1;}
 
 :root {/* Stijlgids in CSS */
     --p:  #701117; 
@@ -10,7 +11,82 @@ main {flex:1;}
     --b2: #f2d48e;
     --c1: #538638;
     --c2: #a9dd8d;
+    --wh: #fff;
+    --bl: #000;
     /* Gebruik var(-- ) voor kleuren */
     
     font-family: Dosis, sans-serif;
+}
+
+
+
+header {
+    position: sticky;
+    width:100%; height: 150px;
+    justify-content: center; align-items: center;
+    gap: 16%;
+
+    background-color: var(--a1);
+}
+
+header > img {height: 90%;}
+#home    > header > nav > a:nth-child(1),
+#ourmenu > header > nav > a:nth-child(3),
+#gallery > header > nav > a:nth-child(5),
+#aboutus > header > nav > a:nth-child(7) {text-decoration: underline;}
+header > nav {
+    height: inherit;
+    justify-content: space-between; align-items: center;
+    gap: 20px;
+}
+
+header > nav > * {
+    color: var(--wh);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+footer {
+    width:100%; height: 100px;
+    justify-content: center; align-items: center;
+    gap: 16%;
+
+    background-color: var(--p);
+}
+
+footer > article {
+    height: inherit; 
+    align-items: center;
+    gap: 10px;
+}
+
+footer > article img {
+    height: 75%;
+    aspect-ratio: 1/1;
+
+    object-fit: cover;
+    border-radius: 100%;
+    border: var(--wh) solid 4px;
+}
+
+footer > p {
+    width: 20%;
+    
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--wh);
+}
+
+
+
+#gallery > main > section {
+    gap:100px;
+    flex-wrap: wrap;
+}
+
+#gallery .pizza {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex-direction: row;
 }
