@@ -9,8 +9,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="Piazo's Pizza, Pizza, Italian Food, Italian Kitchen, Yummy, Restaurant">
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="global.css">
+    <?php include 'libs/components/style.php' ?>
 
     <!--voor <script> tags-->
 </head>
@@ -18,6 +17,10 @@
 <body id="aboutus">
 <?php include 'libs/components/header.php' ?>
     <main>
+        <article class="blok" flex>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident obcaecati repellat officiis, cumque, ea, consequatur omnis hic temporibus excepturi nulla saepe nobis quisquam aperiam reiciendis maiores earum voluptate. Rerum, at!</p>
+            <img src="assets/dishes/">
+    </article>
 
     </main>
 <?php include 'libs/components/footer.php' ?>

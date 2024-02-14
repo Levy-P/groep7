@@ -9,8 +9,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="Piazo's Pizza, Pizza, Italian Food, Italian Kitchen, Yummy, Restaurant">
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="global.css">
+    <?php include 'libs/components/style.php' ?>
 
     <!--voor <script> tags-->
 </head>
@@ -19,34 +18,21 @@
 <?php include 'libs/components/header.php' ?>
     <main>
         <section flex>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
-            <article class="pizza" flex>
-                <img src="assets/dishes/pizza.png" alt="placeholder pizza">
-            </article>
+            <?php
+            $images = "assets/dishes/pizza.png";
+            for ($i = 0; $i < 9; $i++) {
+                echo "
+                <article class=\"blok\" flex>
+                    <img src=\"$images\" alt=\"placeholder pizza ($i+1)\">
+                    <p>Lorem ipsum ik ben de rest vergeten</p>
+                </article>
+                ";
+            }
+            
+            
+            ?>
         </section>
+        
 
     </main>
 <?php include 'libs/components/footer.php' ?>
