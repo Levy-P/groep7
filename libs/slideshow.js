@@ -20,3 +20,4 @@ function toSlide(slide) {
     slideshow_progress = -25;
     slideshow_slide = Math.min(2, Math.max(0, slide));
 }
+//
